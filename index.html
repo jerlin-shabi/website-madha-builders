@@ -4,197 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Matha Builders</title>
-<style>
-  body { background-color: #dce0e6; font-family: Prompt, sans-serif; }
-  .container { max-width: 932px; margin: 0 auto; padding: 27px 0 8px; }
-  header { display: flex; padding-bottom: 20px;margin-left: 5em; }
-  .logo { width: 377.14px;height:auto ;float: left;}
-  .tagline { font-size: 13px; margin-top: 7px; }
-  .navigation { text-transform: uppercase; font-weight: 500; display: flex; gap: 20px; margin-top: 48px; }
-  .navigation a { cursor: pointer; }
-  .active { color: rgba(179, 31, 34, 1); }
-  .navigation-divider { background-color: #b31f22; height: 1px; width: 43px; margin-top: 5px; }
-  .banner { margin-top: 202px; width: 100%; }
+<link rel="stylesheet" href="style.css">
 
-  .sr-only { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-  svg{
-    top:300px
-  }
-
-  @media (max-width: 991px) {
-    header { flex-direction: column; align-items: center; }
-    .navigation { flex-direction: column; align-items: center; }
-    .banner, .navigation-divider, .quote-button { margin-top: 40px; }
-  }
-  a{
-    text-decoration: none;
-  }
-  .svg-container {
-  position: relative;
-  width: 100vw;
-  height: 718px; /* Adjust the height of the container */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
  
-}
-
-.crane {
-  position:relative;
-  top: -70px;
-  margin-right: 10px;
-  margin-right: -580px;
-}
-
-.svg-icon {
-  width: 100vw;
-  top: 450px;
-  position: absolute;
-  width: 100%;
- 
-}
-
-.svg-sun{
-  position: absolute;
-  left: 20px;
-  top: 180px;
-}
-.svg-logo{
-  position: absolute;
-  left: 140px;
-  top: 200px;
-  z-index: 1;
-}
-.quote-button { background-color: #fff;
-  position:absolute;
-  top: 300px;
-  right: 600px;
-  padding: 16px 27px; margin: 34px 0 0; border-left: 5px solid #b31f22; cursor: pointer;
- }
-  .quote-button:focus { outline: 2px solid #b31f22; }
-
-</style>
-
-<style>
- 
-  .phone {
-      top: 75px;
-      width: 90%; /* Set width to 90% of the viewport width */
-      max-width: 950px; /* Maximum width */
-      height: 350px; /* Automatically adjust height */
-      max-height: 439px; /* Maximum height */
-      background-color: #000;
-      border: 20px solid #000; /* Border thickness in viewport units */
-      border-radius: 26px; /* Border radius in percentage */
-      position: relative;
-      margin: 0 auto; /* Center the element horizontally */
-  }   
-  
-  .screen {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(180deg, #2B4C7E 64.12%, #1F1F20 116.17%);
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-  }
-  
-  .notch {
-      width: 30px;
-      height: 200px;
-      background-color: #000;            
-      position: absolute;
-      top: calc(50% - 100px);
-      left: 0;            
-      border-radius: 0 100px 100px 0px ;
-  }
-  
-  .semicircle {
-      width: 100vw; /* Full width of the viewport */
-      height: 50vh; /* Half of the viewport height */
-      background: linear-gradient(180deg, #2B4C7E 12.84%, #2B4C7E 100%);
-      border-radius: 0 0 50vw 50vw;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-  }
-  
-  #about {
-      padding-left: 110px;
-      color: #ffffff;
-      font-family: Oswald;
-      margin-bottom: 0;
-  }
-
-  .about-h1{
-    margin: 0;
-    font-size:32px;
-    font-weight: bold;
-  }
-  
-  .horizontal-line::before {
-      content: "";
-      display: block;
-      width: 50px;
-      height: 1px;
-      background-color: #567EBA;
-      position: absolute;
-      top: 25px;
-      left: 45px;
-      transform: translateY(-50%);
-  }
-  
-  .about-header {
-      padding-left: 30px;
-      color:#000000;
-      font-family: Oswald;
-      font-size: 15.87px;
-      margin: 0;
-      margin-left: 10px;
-  }
-  
-  .about-p {
-      width: auto;
-      height: auto;
-      top: 168px;
-      margin-left: 10px;
-      gap: 8px;
-      font-family: 'Oswald', sans-serif;
-      color:#FFFFFF;
-;
-  }
-  .about-build {
-      bottom: -4px;
-      position: absolute;
-      left: -15px;
-  }
-  .about-button {
-    width: auto;
-    height: auto;    
-    left: 50px;
-    padding: 5px 40px;
-    border: 0;
-    border-left: 6px solid #1F1F20;
-    gap: 10px;
-    background-color: #567EBB;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.12em;
-    text-align: left;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    position: absolute;
-    top: 200px;
-    z-index: 1;
-}
-
-</style>
 </head>
 <body>
 
@@ -253,7 +68,7 @@
     <stop offset="1" stop-color="#F5BD24"/>
     </linearGradient>
     </defs>
-    </svg>      width:100%;
+    </svg>     
 
   <svg class="crane" width="718px" height="642" viewBox="0 0 718 642" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M262.643 169.963H265.674V163.144H236.882V169.963H240.67M262.643 169.963V273.008H240.67V169.963M262.643 169.963H240.67" stroke="#263955" stroke-width="3"/>
@@ -314,7 +129,59 @@
   </div>
 </section>
 
-<!-- Decorative image with empty alt -->
-
+<section id="testmonial-box">
+  <div class="rounded-box " >
+    <div class="testimonial-container">
+      <svg width="381" height="431" viewBox="0 0 381 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.84903 3H3.84903V6V423V426.921L7.63341 425.896L190.527 376.353L373.421 425.896L377.205 426.921V423V6V3H374.205H6.84903Z" fill="white" stroke="#2B4C7E" stroke-width="6"/>
+        <rect x="33.0887" y="275.117" width="37.6102" height="1.28258" fill="#2B4C7E"/>
+        </svg>
+        <svg width="381" height="631" viewBox="0 0 381 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.84903 3H3.84903V6V423V426.921L7.63341 425.896L190.527 376.353L373.421 425.896L377.205 426.921V423V6V3H374.205H6.84903Z" fill="white" stroke="#2B4C7E" stroke-width="6"/>
+          <rect x="33.0887" y="275.117" width="37.6102" height="1.28258" fill="#2B4C7E"/>
+          </svg>
+          <svg width="381" height="431" viewBox="0 0 381 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.84903 3H3.84903V6V423V426.921L7.63341 425.896L190.527 376.353L373.421 425.896L377.205 426.921V423V6V3H374.205H6.84903Z" fill="white" stroke="#2B4C7E" stroke-width="6"/>
+            <rect x="33.0887" y="275.117" width="37.6102" height="1.28258" fill="#2B4C7E"/>
+            
+            <!-- Multiline text using <tspan> elements -->
+            <text x="20" y="100" font-family="Arial" font-size="20" fill="#2B4C7E">
+                <tspan x="20" dy="2em">A pellen tesque pretium feugiat vel mobi</tspan>
+                <tspan x="70" dy="2em">sagittis lorem habi tasse cursus ipsum quis</tspan>
+                <tspan x="70" dy="2em">nec eget facilisis. Quis nibh ut bindum nisl</tspan>
+                <tspan x="70" dy="2em">quis placerat proin tortor mattis.</tspan>
+            </text>
+        </svg>
+    </div>
+  </div>
+  
+</section>
 </body>
+
+<style>
+#testmonial-box {
+  display: flex;
+  justify-content: center;
+  
+
+}
+.testimonial-container{
+ position: relative;
+  top:600px;
+  left: 50px;
+}
+  .rounded-box {
+    /* Rectangle 144 */
+  width: 1242px;
+  height: 828px;  
+  display: flex;
+  flex-direction: row;
+
+
+background: #2B4C7E;
+border-radius: 50px;
+
+  }
+</style>
+
 </html>
