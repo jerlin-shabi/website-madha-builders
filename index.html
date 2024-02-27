@@ -31,7 +31,7 @@
   }
   .svg-container {
   position: relative;
-  width:100%;
+  width: 100vw;
   height: 718px; /* Adjust the height of the container */
   display: flex;
   flex-direction: column;
@@ -48,6 +48,7 @@
 }
 
 .svg-icon {
+  width: 100vw;
   top: 450px;
   position: absolute;
   width: 100%;
@@ -72,6 +73,126 @@
   padding: 16px 27px; margin: 34px 0 0; border-left: 5px solid #b31f22; cursor: pointer;
  }
   .quote-button:focus { outline: 2px solid #b31f22; }
+
+</style>
+
+<style>
+ 
+  .phone {
+      top: 75px;
+      width: 90%; /* Set width to 90% of the viewport width */
+      max-width: 950px; /* Maximum width */
+      height: 350px; /* Automatically adjust height */
+      max-height: 439px; /* Maximum height */
+      background-color: #000;
+      border: 20px solid #000; /* Border thickness in viewport units */
+      border-radius: 26px; /* Border radius in percentage */
+      position: relative;
+      margin: 0 auto; /* Center the element horizontally */
+  }   
+  
+  .screen {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #2B4C7E 64.12%, #1F1F20 116.17%);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .notch {
+      width: 30px;
+      height: 200px;
+      background-color: #000;            
+      position: absolute;
+      top: calc(50% - 100px);
+      left: 0;            
+      border-radius: 0 100px 100px 0px ;
+  }
+  
+  .semicircle {
+      width: 100vw; /* Full width of the viewport */
+      height: 50vh; /* Half of the viewport height */
+      background: linear-gradient(180deg, #2B4C7E 12.84%, #2B4C7E 100%);
+      border-radius: 0 0 50vw 50vw;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  
+  #about {
+      padding-left: 110px;
+      color: #ffffff;
+      font-family: Oswald;
+      margin-bottom: 0;
+  }
+
+  .about-h1{
+    margin: 0;
+    font-size:32px;
+    font-weight: bold;
+  }
+  
+  .horizontal-line::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #567EBA;
+      position: absolute;
+      top: 25px;
+      left: 45px;
+      transform: translateY(-50%);
+  }
+  
+  .about-header {
+      padding-left: 30px;
+      color:#000000;
+      font-family: Oswald;
+      font-size: 15.87px;
+      margin: 0;
+      margin-left: 10px;
+  }
+  
+  .about-p {
+      width: auto;
+      height: auto;
+      top: 168px;
+      margin-left: 10px;
+      gap: 8px;
+      font-family: 'Oswald', sans-serif;
+      color:#FFFFFF;
+;
+  }
+  .about-build {
+      bottom: -4px;
+      position: absolute;
+      left: -15px;
+  }
+  .about-button {
+    width: auto;
+    height: auto;    
+    left: 50px;
+    padding: 5px 40px;
+    border: 0;
+    border-left: 6px solid #1F1F20;
+    gap: 10px;
+    background-color: #567EBB;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+}
 
 </style>
 </head>
@@ -132,7 +253,7 @@
     <stop offset="1" stop-color="#F5BD24"/>
     </linearGradient>
     </defs>
-    </svg>    
+    </svg>      width:100%;
 
   <svg class="crane" width="718px" height="642" viewBox="0 0 718 642" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M262.643 169.963H265.674V163.144H236.882V169.963H240.67M262.643 169.963V273.008H240.67V169.963M262.643 169.963H240.67" stroke="#263955" stroke-width="3"/>
@@ -163,7 +284,36 @@
       </svg>
       
 </div>
-  
+<section id="about-us" class="semicircle">
+  <div class="phone">
+      <div class="screen">
+          <div class="horizontal-line"></div>
+          <p id="about">About Us</p>
+          <div class="about-header">
+              <h1 class="about-h1">RECOGNIZE MORE <br> ABOUT OUR COMPANY</h1>
+              <div class="about">
+                  <div class="about-p"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad, eligendi nulla aspernatur consequatur odio, molestiae ea magni doloribus debitis exercitationem aliquid hic quibusdam fugit optio blanditiis in facilis velit.</p></div>
+                  <div class="about-button">ABOUT US</div>
+                  <div class="about-build">
+                      <svg width="935" height="146" viewBox="0 0 935 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M934.574 176H0V146.979H8.04036V153.532H16.5537V131.064H58.6473V89.4043L87.971 77.7021V131.064H98.8491V71.1489H108.781V46.8085H120.132V38.8511H139.524V49.617H146.145V35.1064H153.24V49.617H159.861V42.1277H168.848V51.0213H180.199V87.5319H208.103V43.5319H213.306V31.8298H222.765V43.5319H235.062V46.8085H245.94V107.66H264.859V131.064H292.291V80.0426H299.385V66.9362H308.371V71.1489H317.358V76.766H327.29V80.0426H335.803V120.766H343.371V131.064H377.897V71.1489H394.924V38.383H429.923V131.064H448.841V94.5532H455.463V78.1702H464.449V94.5532H468.233V107.66H481.003V131.064H489.043V97.8298H501.813V54.766H518.367V22.4681H553.839V131.064H571.339V17.3191H560.933V8.89362H571.339V6.55319H574.649V0H587.892V6.55319H611.54V12.6383H619.108V17.3191H611.54V131.064H621.946V104.851H635.661V82.383H660.255V104.851H673.971V114.681H660.255V131.064H699.038V72.5532H691.944V67.4043H739.24V72.5532H734.038V106.255H748.699V131.064H783.226V114.681H803.563V106.255H814.441V67.4043H826.265V106.255H839.508V131.064H883.494V114.681H899.102V144.17H916.601V159.617H934.574V176Z" fill="url(#paint0_linear_60_109)"></path>
+                          <defs>
+                          <lineargradient id="paint0_linear_60_109" x1="410.5" y1="208.5" x2="122.5" y2="-6.30854e-06" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#567EBB"></stop>
+                          <stop offset="1" stop-color="#2B4C7E"></stop>
+                          </lineargradient>
+                          </defs>
+                      </svg>
+                  </div>
+              </div>
+          </div>
+          <div class="notch"></div>
+          
+      </div>
+      
+  </div>
+</section>
+
 <!-- Decorative image with empty alt -->
 
 </body>
