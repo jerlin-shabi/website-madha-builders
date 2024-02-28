@@ -10,7 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
  
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <body>
 
   <header>
@@ -129,6 +131,111 @@
   </div>
 </section>
 
+
+
+<style>
+  body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .projects-section {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-top: 40px;
+      padding: 20px;
+      max-width: 977px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .projects-intro {
+      font-size: 14px;
+      color: #1f1f20;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 4.48px;
+      line-height: 119%;
+      display: flex;
+      gap: 16px;
+  }
+
+  .intro-accent {
+      background-color: #2b4c7e;
+      width: 52px;
+      height: 1px;
+      margin: auto 0;
+  }
+
+  .projects-title {
+      color: #000;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      margin-top: 28px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 119%;
+  }
+
+  .projects-gallery {
+      display: flex;
+      gap: 20px;
+      margin-top: 44px;
+      align-self: stretch;
+  }
+
+  .gallery-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+  }
+
+  .project-image {
+      width: 100%;
+      border-bottom: 57px solid #567ebb;
+      object-fit: cover;
+      object-position: center;
+  }
+
+  @media (max-width: 991px) {
+      .projects-section {
+          padding: 0 20px;
+      }
+
+      .projects-intro, .projects-title, .projects-gallery {
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+      .gallery-column:not(:first-child) {
+          margin-top: 40px;
+      }
+  }
+</style>
+
+
+
+  <section class="projects-section">
+      <header class="projects-intro">
+          <h2>latest projects</h2>
+          <div class="intro-accent"></div>
+      </header>
+      <h1 class="projects-title">Explore our works</h1>
+      <div class="projects-gallery">
+          <div class="gallery-column" style="width: 73%;">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ac76c3d6109950621332824870166897016cf8fadc948d4b40ba6ac66d730b1?apiKey=f7c41c6cbd4146e0b9d1e125fe228d48&" class="project-image" alt="Project Image 1"/>
+          </div>
+          <div class="gallery-column" style="width: 27%;">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/21db4c5800663d439ed32be1e91faf226d27ff5d85961ade6fab28e451942f95?apiKey=f7c41c6cbd4146e0b9d1e125fe228d48&" class="project-image" alt="Project Image 2"/>
+          </div>
+      </div>
+  </section>
+
+
 <section id="testmonial-box">
   <div class="rounded-box " >
     <div class="testimonial-container">
@@ -225,5 +332,47 @@
       </div>
   </div>
   </section>
+
+  <footer>
+    <div class="flex">
+        <img  src="/image.png" alt="Image"class="footer-image">
+        <div class="alaignment">
+            <div class="list1">
+                <p id="a">About</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Career</p>
+                <p>Contact</p>
+                <p>Help</p>
+            </div>
+            <div class="list2">
+                <p>Quick Links</p>
+                <p>Newsletter</p>
+                <p>Articles</p>
+                <p>Location</p>
+            </div>
+            <div class="list3">
+                <p>xxxxxxxxxx</p>
+                <p>xxxxxxxxxx</p>
+                <p>+911111111111</p>
+                <p>info@yourinfo.com</p>
+            </div>
+        </div>
+    </div>
+<hr>
+<div  id="copyright">
+    <p>&copy; Matha Builders | Designed by:BASHERS</p>
+    <div id="social-items">
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin-square"></i>
+    <i class="fa fa-twitter-square"></i>
+    <i class="fa fa-youtube-square"></i>
+    </div>  
+
+</div>
+
+</footer>
+
 </body>
 </html>
