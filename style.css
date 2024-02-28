@@ -427,3 +427,65 @@ hr {
 #contact{
 position: relative;
 }
+
+/* Footer section*/
+
+
+
+
+/* Styles for the image */
+footer img {
+   width:226.37px;
+   height: 161.72px;
+   margin-left: 126.67px;
+   
+   border:0px, 0px, 1.08px, 0px;
+   
+    /* Add space below the image */
+}
+.alaignment{
+   display:flex;
+   justify-content:space-around;
+   width: 100%;
+   height:156px;
+   float: right;
+   
+  
+  
+}
+#copyright{
+   margin-left: 206.67px;
+   height:fixed(866.67px);
+   width:fixed(21.33px);
+   display: flex;
+   justify-content:space-between;
+   
+   
+}
+footer{
+
+   position: relative;
+   top: 1000px;
+   height:700px;
+   background-color:#DCE0E6;
+   color: #666666;
+   font-family: oswald;
+   
+}
+.flex{
+   display: flex;
+   
+   height:302px;
+   
+   
+
+}
+#icon{
+   display:flex;
+   gap: 13.33px;
+   width:100% ;
+   height:Hug (10px) ;
+   
+  
+
+}
