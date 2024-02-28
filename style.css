@@ -76,15 +76,15 @@ svg{
   top:300px
 }
 
-@media (max-width: 991px) {
+@media (max-width: 91px) {
   header { 
-    flex-direction: column; 
-    align-items: 
-    center;
+    
+    align-items: center;
+    flex-direction: column
    }
 
   .navigation { 
-    flex-direction: column; 
+    
     align-items: center; 
   }
 
@@ -453,30 +453,27 @@ footer img {
   
   
 }
-#copyright{
-   margin-left: 206.67px;
-   height:fixed(866.67px);
-   width:fixed(21.33px);
-   display: flex;
-   justify-content:space-between;
-   
-   
+.copyright{
+  width:100%;
+  height: auto;
+  display: flex;
+  gap:45%;
+  justify-content: center;
 }
 footer{
 
    position: relative;
-   top: 1000px;
-   height:700px;
+   top: 698px;
+   height:400px;
    background-color:#DCE0E6;
    color: #666666;
    font-family: oswald;
    
 }
-.flex{
+.footer-container{
    display: flex;
    
    height:302px;
-   
    
 
 }
@@ -485,7 +482,15 @@ footer{
    gap: 13.33px;
    width:100% ;
    height:Hug (10px) ;
-   
-  
-
+}
+footer p{
+margin: 0;
+}
+hr{
+  width:100%
+}
+.footer-logo{
+  position: relative;
+  top:50px;
+  left: 100px;
 }
