@@ -1,7 +1,13 @@
 body { 
-  background-color: #dce0e6; 
+  
   font-family: Prompt, 
   sans-serif; 
+  margin: 0;
+}
+
+header,.svg-container{
+  background-color: #DCE0E6;
+  ;
 }
 
 /* Styles for Header */
@@ -14,7 +20,7 @@ body {
 header { 
   display: flex; 
   padding-bottom: 20px;
-  margin-left: 5em; 
+  left: 5em; 
 }
 
 .logo { 
@@ -23,7 +29,8 @@ header {
   float: left;
 }
 
-.tagline { 
+.tagline { background: #DCE0E6;
+
   font-size: 13px; 
   margin-top: 7px; 
 }
@@ -289,7 +296,12 @@ border-radius: 50px;
 
 .articles{
   position: relative;
-  top: 500px;
+  top: 450px;
+  display: flex;
+  margin-left: 50px;
+  gap: 400px;
+  
+ 
 }
 .article-container {
     margin-top: 10px;
@@ -326,4 +338,92 @@ border-radius: 50px;
 .article-bottom {
     border-radius: 0 0 80px 0;
     background-color: gray;
+}
+
+/* Article Text container */
+
+.article-top-text{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  display: inline;
+}
+.article-text-container{
+  height: 400px;
+  width: 300px;
+  position: relative;
+  float: right;
+  
+}
+.article-text{
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 15px;
+  text-align: end;
+  font-family: sans-serif;
+}
+.article-button{
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border: none;
+  background-color: #567EBA;
+  color: white;
+  border-right: 10px solid #2B4C7E;
+  position: relative;
+  float: right;
+  top: 50px;
+}
+hr {
+  width: 100px;
+  height: 2px; 
+  background-color: #000000;
+  border: none; 
+  display: inline-block; /* Adjusted to display as inline-block */
+  position: relative;
+  top: 3px; /* Added margin for spacing */
+  float: right;
+}
+
+/* Contact section */
+
+.contact-text-container{
+     
+  width: 695px;
+  height:  215.56px;
+  top: 375px;
+  left: 495px;
+  gap: 34.92px;
+  
+}
+.contact-text-container h1{
+  
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.contact-container{
+  position: relative;
+  top: 700px;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+
+  
+}
+.contact-button{
+  width:181.31px;
+  height: 64.66px;
+  padding: 21.83px, 43.66px, 21.83px, 43.66px;
+  background: #567EBA;
+  border: 0px, 0px, 0px, 5.24px;
+  gap: 8.73px;
+  border-left: 5.24px solid #2B4C7E;
+  color:#fff;
+
+}
+
+#contact{
+position: relative;
 }
