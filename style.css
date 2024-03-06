@@ -6,79 +6,56 @@ body {
   overflow-x: hidden;
 }
 
+/* Styles for Header */
+
 header,.svg-container{
   background-color: #DCE0E6;
-  ;
-}
-
-/* Styles for Header */
-.container { 
-  max-width: 932px; 
-  margin: 0 auto; 
-  padding: 27px 0 8px; 
+  
 }
 
 header { 
   display: flex; 
   padding-bottom: 20px;
-  left: 5em; 
-  flex-wrap: wrap;
+  font-size: 12px;
+  font-family: oswald;
+  padding: 30px;
+  font-weight:900;
 }
 
 .logo { 
-  width: 377.14px;
+  width: 35%;
   height:auto ;
-  float: left;
-}
 
-.tagline { background: #DCE0E6;
 
-  font-size: 13px; 
-  margin-top: 7px; 
+  margin-left: 10px;
 }
 
 .navigation { 
+  width: 80%;
   text-transform: uppercase; 
   font-weight: 500; 
   display: flex; 
+  justify-content:space-around;
   gap: 20px; 
-  margin-top: 48px; 
+  align-items: center;
+ 
 }
 
 .navigation a { 
   cursor: pointer; 
 }
-
-.active { 
-  color: rgba(179, 31, 34, 1); 
-}
-
-.navigation-divider { 
-  background-color: #b31f22; 
-  height: 1px; 
-  width: 43px; 
-  margin-top: 5px; 
-}
-
-.banner { 
-  margin-top: 202px; 
-  width: 100%; 
-}
-
-.sr-only { 
-  position: absolute; 
-  left: -10000px; 
-  top: auto; 
-  width: 1px; 
-  height: 1px; 
-  overflow: hidden; 
-}
-
-
-
-
+ 
 a{
   text-decoration: none;
+  color: black;
+  /*text spacin */
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:#B31F22 ;
 }
 
 /* Hero Section Svg */
