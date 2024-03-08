@@ -80,12 +80,9 @@ justify-content: flex-end;
   transform: translate(-60%); /* Adjust horizontally to center properly */
   width: 55vw;
   height: 77vh;
-  
-  
 }
 
 .svg-icon {
-
 position: absolute;
 width: 100%;
 height: auto;
@@ -94,16 +91,13 @@ z-index: 1;
 
 .svg-sun {
   position: absolute;
-  left: 5vw;
-  top: 10vh;
+  left: 22vw;
+  top: 16vh;
   z-index: 1;
   height: 17vh;
   width: auto;
   transform: translate(-50%, -50%);
 }
-
-
-
 
 .hero-logo{
 position: absolute;
@@ -117,17 +111,16 @@ z-index: 2;
 .quote-button {
   background-color: #fff;
   position: absolute; /* Fixed positioning for centering */
-  top: 38.5%; /* Adjusted to place 300px down from the top */
+  top: 38.6%; /* Adjusted to place 300px down from the top */
   left: 58.5%;
   transform: translate(-10%, 20%);
-  padding: 2% 3%;
+  padding: 1% 2%;
   margin: 0; /* Remove margins */
+  border:none;
   border-left: 5px solid #b31f22;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
-
-
 
 .quote-button:focus { 
   outline: 2px solid #b31f22; 
@@ -137,14 +130,15 @@ z-index: 2;
     top: 75px;
     width: 90%; /* Set width to 90% of the viewport width */
     max-width: 950px; /* Maximum width */
-    height: 350px; /* Automatically adjust height */
+    height: 370px; /* Automatically adjust height */
     max-height: 439px; /* Maximum height */
-    border: 19px solid #000;
+    border: 19px solid #1F1F20;
     border-radius: 26px; /* Border radius in percentage */
      /* Border thickness in viewport units */
      background: linear-gradient(180deg, #2B4C7E 64.12%, #1F1F20 116.17%);/* Border radius in percentage */
     position: relative;
     margin: 0 auto; /* Center the element horizontally */
+    
 }   
 
 .screen {
@@ -158,10 +152,10 @@ z-index: 2;
 
 .notch {
     width: 30px;
-    height: 200px;
-    background-color: #000;            
+    height: 190px;
+    background-color: #1F1F20;            
     position: absolute;
-    top: calc(50% - 100px);
+    top: calc(50% - 90px);
     left: 0;            
     border-radius: 0 100px 100px 0px ;
 }
@@ -181,14 +175,23 @@ z-index: 2;
 #about,#testimonial {
     padding-left: 110px;
     color: #ffffff;
-    font-family: Oswald;
     margin-bottom: 0;
 }
 
+.about{
+  width: 70%;
+
+}
+#about{
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  font-style: opensans !important;
+}
 .about-h1{
   margin: 0;
   font-size:32px;
   font-weight: bold;
+
 }
 
 .horizontal-line::before {
@@ -218,9 +221,9 @@ z-index: 2;
     top: 168px;
     margin-left: 10px;
     gap: 8px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'opensans';
     color:#FFFFFF;
-;
+
 }
 .about-build {
     bottom: -4px;
@@ -249,26 +252,29 @@ z-index: 2;
   display: inline-block;
   text-decoration: none;
   position: absolute;
-  top: 200px;
+  top: 250px;
   z-index: 1;
 }
+
 /*Project Section*/
-.project-section {
-  z-index: 10;
-  display: flex;
+.feedback{
   margin-top: 190px;
+}
+
+.project-section {
+  z-index: 0;
+  display: flex;
+  left: 0;
+  margin: auto;
   width: 100%;
   max-width: 977px;
   flex-direction: column;
   align-items: end;
   padding: 0 20px;
+  justify-content: right;
+  z-index: 1;
 }
-@media (max-width: 991px) {
-  .project-section {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
+
 .project-header {
   display: flex;
   gap: 16px;
@@ -280,26 +286,19 @@ z-index: 2;
   letter-spacing: 4.48px;
   line-height: 119%;
 }
-@media (max-width: 991px) {
-  .project-header {
-    white-space: initial;
-  }
-}
+
 .projects-title {
   font-family: 'Open Sans', sans-serif;
   flex-grow: 1;
 }
-@media (max-width: 991px) {
-  .projects-title {
-    white-space: initial;
-  }
-}
+
 .title-underline {
   background-color: #2b4c7e;
   width: 52px;
   height: 1px;
   margin: auto 0;
 }
+
 .explore-text {
   color: #000;
   letter-spacing: 0.9px;
@@ -307,34 +306,17 @@ z-index: 2;
   margin-top: 28px;
   font: 700 45px/119% 'Oswald', sans-serif;
 }
-@media (max-width: 991px) {
-  .explore-text {
-    font-size: 40px;
-    white-space: initial;
-  }
-}
+
 .work-gallery {
   align-self: stretch;
   margin-top: 44px;
 }
-@media (max-width: 991px) {
-  .work-gallery {
-    max-width: 100%;
-    padding-right: 20px;
-    margin-top: 40px;
-  }
-}
+
 .image-row {
   gap: 20px;
   display: flex;
 }
-@media (max-width: 991) {
-  .image-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
-  }
-}
+
 .large-image-container {
   display: flex;
   flex-direction: column;
@@ -342,11 +324,7 @@ z-index: 2;
   width: 73%;
   margin-left: 0px;
 }
-@media (max-width: 991px) {
-  .large-image-container {
-    width: 100%;
-  }
-}
+
 .large-image {
   aspect-ratio: 1.1;
   object-fit: cover;
@@ -354,12 +332,7 @@ z-index: 2;
   width: 100%;
   border-bottom: 57px solid #567ebb;
 }
-@media (max-width: 991px) {
-  .large-image {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
+
 .small-image-container {
   display: flex;
   flex-direction: column;
@@ -367,11 +340,7 @@ z-index: 2;
   width: 27%;
   margin-left: 20px;
 }
-@media (max-width: 991px) {
-  .small-image-container {
-    width: 100%;
-  }
-}
+
 .small-image {
   aspect-ratio: 0.59;
   object-fit: cover;
@@ -379,16 +348,16 @@ z-index: 2;
   width: 100%;
   border-bottom: 57px solid #567ebb;
 }
-@media (max-width: 991) {   .small-image {
-    margin-top: 40px;
-  }
-}
+
+
 /* Testimonial Section*/
 
 #testmonial-section{
+  z-index: -9;
   display: flex;
   justify-content: center;
-  
+  position: relative;
+  top: -250px;
 
 }
 .testimonial-container{
@@ -441,15 +410,13 @@ z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  
  
-    
 }
 
 .box {
   background-color: #f0f0f0;
   padding: 20px;
-  border: 1px solid #ccc;
+
   width: 23vw;
 height: 23vw;
 max-width: 200px; 
@@ -471,7 +438,10 @@ flex-shrink: 0;
 
 .box:nth-child(4) {
   border-bottom-right-radius: 50px;
+  border-right: 20px solid #2B4C7E;
+  border-bottom: 20px solid #2B4C7E;
 }
+
 
 /* Article Text container */
 
@@ -510,11 +480,14 @@ flex-shrink: 0;
 
 /* Contact section */
 
-
-.contact-text-container{
-
-  top: 375px;
-  left: 495px;
+#contact {
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 50px; /* Adjust as needed */
+}.contact-text-container{
+ position: relative;
+  top: 70px;
+  left: -250px;
   gap: 34.92px;
 
   
@@ -531,8 +504,9 @@ flex-shrink: 0;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 10%;
-  flex-wrap: wrap;
+  
+  
+  justify-content: center;
   
 }
 .contact-button{
@@ -571,20 +545,25 @@ hr {
   
    display: flex;
    justify-content:center;
+    width: 90%;
+  gap: 50%;
    
-   
+}
+#social-items {
+  margin: 16px 0;
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  width: 8px;
+  height: 8px;
 }
 /* Contact section */
-#contact {
-  margin-bottom: 65px; /* Adjust as needed */
-}
+
 footer svg {
   width: 20%;
   height: 10%;
   padding:1em ;
   
-  
-
 }
 /* Footer section */
 footer {
