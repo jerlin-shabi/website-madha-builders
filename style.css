@@ -221,7 +221,7 @@ z-index: 2;
     top: 168px;
     margin-left: 10px;
     gap: 8px;
-    font-family: 'opensans';
+    font-family: oswald;
     color:#FFFFFF;
 
 }
@@ -330,7 +330,7 @@ z-index: 2;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  border-bottom: 57px solid #567ebb;
+  border-bottom: 20px solid #567ebb;
 }
 
 .small-image-container {
@@ -346,7 +346,7 @@ z-index: 2;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  border-bottom: 57px solid #567ebb;
+  border-bottom: 1px solid #567ebb;
 }
 
 
@@ -357,7 +357,7 @@ z-index: 2;
   display: flex;
   justify-content: center;
   position: relative;
-  top: -250px;
+  top: -220px;
 
 }
 .testimonial-container{
@@ -398,7 +398,7 @@ z-index: 2;
 /* Article Section*/
 
 .articles{
-  margin-top: 300px;
+  
   display: flex;
   justify-content: center;
   gap: 20%;
