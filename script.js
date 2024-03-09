@@ -1,31 +1,35 @@
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const largeImage = document.querySelector('.large-image');
-const smallImage = document.querySelector('.small-image');
+function setupImageGallery(totalImages, largeImageClass, smallImageClass) {
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const largeImage = document.querySelector(largeImageClass);
+  const smallImage = document.querySelector(smallImageClass);
 
-let currentIndex = 1; // Index of the currently displayed image
+  let currentIndex = 1; // Index of the currently displayed image
 
-// Function to update the image source based on the current index
-function updateImages() {
-  largeImage.src = `./assets/img/img-${currentIndex}.jpg`;
-  smallImage.src = `./assets/img/img-${currentIndex + 1}.jpg`;
-}
+  // Function to update the image source based on the current index
+  function updateImages() {
+    // Ensure currentIndex is within the range of images
+    currentIndex = (currentIndex + totalImages - 1) % totalImages + 1;
 
-// Event listener for the previous button
-prevBtn.addEventListener('click', () => {
-  if (currentIndex > 1) {
+    largeImage.src = `./assets/img/img-${currentIndex}.jpg`;
+    smallImage.src = `./assets/img/img-${(currentIndex % totalImages) + 1}.jpg`;
+  }
+
+  // Event listener for the previous button
+  prevBtn.addEventListener('click', () => {
     currentIndex -= 1;
     updateImages();
-  }
-});
+  });
 
-// Event listener for the next button
-nextBtn.addEventListener('click', () => {
-  if (currentIndex < 9) { // Assuming you have 10 images in total
+  // Event listener for the next button
+  nextBtn.addEventListener('click', () => {
     currentIndex += 1;
     updateImages();
-  }
-});
+  });
 
-// Initial image setup
-updateImages();
+  // Initial image setup
+  updateImages();
+}
+
+// Call the function with parameters
+setupImageGallery(10, '.large-image', '.small-image');
