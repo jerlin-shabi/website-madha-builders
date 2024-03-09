@@ -379,9 +379,10 @@ a:hover{
   top: 2280px;
   left: 952px;
   background:var(--indicator);
+ 
 }
 
-.indicator-active{
+.indicator:hover{
   background-color: var(--button-border-dark);
 }
 
