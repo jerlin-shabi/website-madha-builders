@@ -32,4 +32,4 @@ function setupImageGallery(totalImages, largeImageClass, smallImageClass) {
 }
 
 // Call the function with parameters
-setupImageGallery(10, '.large-image', '.small-image');
+setupImageGallery(19, '.large-image', '.small-image');
