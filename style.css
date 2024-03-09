@@ -350,6 +350,7 @@ a:hover{
   object-position: center;
   width: 100%;
   border-bottom: 20px solid var(--button-background);
+  z-index: 3;
 }
 
 .small-image-container {
@@ -366,6 +367,7 @@ a:hover{
   object-position: center;
   width: 100%;
   border-bottom: 1px solid var(--button-background);
+  z-index: 3;
 }
 
 .indicator-row {
@@ -409,46 +411,63 @@ a:hover{
 
 /* Testimonial Section*/
 
-#testmonial-section{
-  z-index: -9;
+#testmonial-section {
   display: flex;
   justify-content: center;
   position: relative;
   top: -220px;
+  z-index: 1; /* Ensure the testimonial section is above other elements */
 }
 
-.testimonial-container{
- position: relative;
- display: flex;
- top:45%;
- flex-direction: column;
+.testimonial-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 45%;
 }
 
-.testimonial-client{
-  color:var(--background);
+.testimonial-slide-container {
+  display: flex;
+  position: relative;
 }
 
-.testimonial-client h1{
+.rounded-box {
+  width: 98%;
+  height: 828px;
+  background: var(--article-hover-border);
+  border-radius: 50px;
+  position: relative;
+  gap: 0;
+  z-index: 1; /* Ensure the testimonial box is above other elements */
+}
+
+.testimonial-client {
+  text-align: left;
+}
+
+.testimonial-client h1 {
   font-size: 30px;
   text-transform: uppercase;
 }
 
-.testimonial-slide-container{
-  display: flex;
-  position: relative; 
+.testimonial-buttons {
+  position: absolute;
+  bottom: 20px; /* Adjust the position of the buttons */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-  .rounded-box {
-    width: 98%;
-    height: 828px;    
-    background: var(--article-hover-border);
-    border-radius: 50px;
-    position: relative;
-    gap: 0;
+.testimonial-button {
+  padding: 10px 20px;
+  background-color: var(--button-background);
+  color: var(--background);
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-.testimonial-client{
-  text-align: left;
+.testimonial-button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
 }
 
 /* Article Section*/
