@@ -48,7 +48,7 @@ header {
   font-weight: 500; 
   display: flex; 
   justify-content:space-around;
-  margin-right: 15%;
+  margin-right: 20%;
   align-items: center;
  }
 
@@ -65,7 +65,7 @@ a{
   font-size: 12px;
 }
 
-a:hover{
+nav a:hover{
   text-decoration: underline;
   color:var(--active-nav-link);
 }
@@ -92,8 +92,8 @@ a:hover{
   z-index: 1;
   left: 77%; /* Center horizontally */
   transform: translate(-60%); /* Adjust horizontally to center properly */
-  width: 55vw;
-  height: 77vh;
+  width: 50vw;
+  height: 70vh;
 }
 
 .svg-icon {
@@ -105,8 +105,8 @@ a:hover{
 
 .svg-sun {
   position: absolute;
-  left: 22vw;
-  top: 5vh;
+  left: 15vw;
+  top: 3rem;
   z-index: 1;
   height: 20vh;
   width: auto;
@@ -116,9 +116,9 @@ a:hover{
 .hero-logo{
   position: absolute;
   left: 15%;
-  top: 15%;
-  width: 64%;
-  height: 19%;
+  top: 16%;
+  width: 60%;
+  height:auto;
   z-index: 2;
 }
 
@@ -127,7 +127,7 @@ a:hover{
 .quote-button {
   background-color:var(--background);
   position: absolute; /* Fixed positioning for centering */
-  top: 38.6%; /* Adjusted to place 300px down from the top */
+  top: 39.6%; /* Adjusted to place 300px down from the top */
   left: 58.5%;
   transform: translate(-10%, 20%);
   padding: 1% 2%;
@@ -150,7 +150,7 @@ a:hover{
     max-width: 950px; /* Maximum width */
     height: 370px; /* Automatically adjust height */
     max-height: 439px; /* Maximum height */
-    border: 19px solid var(--button-border-dark);
+    outline: 19px solid var(--button-border-dark);
     border-radius: 26px; /* Border radius in percentage */
      /* Border thickness in viewport units */
      background: linear-gradient(180deg, var(--button-background) 64.12%,var(--button-border-dark) 116.17%);/* Border radius in percentage */
@@ -168,7 +168,7 @@ a:hover{
 }
 
 .notch {
-    width: 30px;
+    width: 48px;
     height: 190px;
     background-color:var(--button-border-dark);            
     position: absolute;
@@ -193,6 +193,7 @@ a:hover{
     color:var(--background);
     margin-bottom: 0;
     letter-spacing: 0.32em;
+    
 }
 
 .about{
@@ -203,6 +204,8 @@ a:hover{
   letter-spacing: 2px; 
   text-transform: uppercase;
   font-style: var(--oswald-font) !important;
+  margin-left: 2em;
+
 }
 
 .about-h1{
@@ -220,12 +223,12 @@ a:hover{
     background-color: var(--button-background);
     position: absolute;
     top: 25px;
-    left: 45px;
+    left: 70px;
     transform: translateY(-50%);
 }
 
 .about-header {
-    padding-left: 30px;
+    padding-left: 60px;
     color:var(--text);
     font-family: var(--oswald-font);
     font-size: 15.87px;
@@ -254,7 +257,7 @@ a:hover{
 .about-button {
   width: auto;
   height: auto;    
-  left: 50px;
+  left: 60px;
   padding: 5px 40px;
   border: 0;
   border-left: 6px solid var(--button-border-dark);
@@ -423,7 +426,7 @@ a:hover{
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 45%;
+  top: 47%;
 }
 
 .testimonial-slide-container {
@@ -444,9 +447,29 @@ a:hover{
 .testimonial-client {
   text-align: left;
 }
-
+.testimonial-container .horizontal-line::before{
+  left: 0;
+}
+.testimonial-client p{
+  color: #FFF;
+font-family: var(--oswald-font);
+font-size: 12.245px;
+font-style: normal;
+font-weight: 400;
+line-height: 119%; /* 14.572px */
+letter-spacing: 100px;
+text-transform: uppercase;
+}
 .testimonial-client h1 {
-  font-size: 30px;
+  
+  text-transform: uppercase;
+  color: var(--background);
+  font-family: var(--oswald-font);
+  font-size: 39.36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 119%; /* 46.838px */
+  letter-spacing: 0.787px;
   text-transform: uppercase;
 }
 
@@ -511,8 +534,9 @@ a:hover{
 
 .box:nth-child(4) {
   border-bottom-right-radius: 50px;
-  border-right: 20px solid var(--article-hover-border);
-  border-bottom: 20px solid var(--article-hover-border);
+  box-shadow: 
+    5px 5px 0px 0px var(--article-hover-border), /* Right shadow */
+    5px 5px 0px 0px var(--article-hover-border) ;
 }
 
 
